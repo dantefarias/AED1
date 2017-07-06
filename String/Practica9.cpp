@@ -307,6 +307,26 @@ vector<string> split (string cadena) {
 
 }
 
+int cuantoAgrega (string text) {
+	int count = 0;
+		while (text[text.size()-1] == '#') {
+			text.pop_back();
+			count++;
+		}
+
+	return count-1;
+}
+/*
+vector<string> justifica (vector<string> texto) {
+	vector<string> justificado;
+	int i = 0;
+	while (i < texto.size()) {
+		justificado = split(texto[i]);
+
+	}
+}
+*/
+
 // Ejercicio 14
 vector<string> ejer14 (string cadena, int c) {
 	vector<string> cad1 (split(cadena));
