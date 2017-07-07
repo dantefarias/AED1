@@ -15,6 +15,6 @@ string ejer10 (string cad1, string cad2);
 vector<pair<int,int> > subsec (string cad1, string cad2);
 string armarsub (string cad1, int i, int f);
 vector<string> sacaDelim (string cadena, char delim);
-string InvertirFrase (string cadena, char delimitador);
+vector<string> InvertirFrase (string cadena, char delimitador);
 vector<string> split (string cadena);
-vector<int> esMeseta (vector<int> vec);
+vector<string> ejer14 (string cadena, int c);
