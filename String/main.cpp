@@ -8,15 +8,10 @@ using namespace std;
 int main() {
 
 
-	/* Ejer 1
-	vector<int> vec {2,2,2,2,8,5,5,5,3,9,6,6,6,6,6};
-	//cout << meseta(vec).first << ", " << meseta(vec).second;
-	vector<int> vec1 (esMeseta(vec));
-	for ( int i = 0; i < vec1.size(); i++) {
-		cout << vec1[i] << endl;
-	}
+	/* Ejer1
+	vector<int> vec {2,2,2,2,8,5,5,5,5,5,3,9,6,6,6,6};
+	cout << meseta(vec).first << ", " << meseta(vec).second;
 	*/
-
 
 	/* Ejer 2
 	vector <vector<int> > base;
@@ -85,7 +80,6 @@ int main() {
 	}
 	*/
 
-
 	/*string cad1 {'2','3','5','1','9','2'};
 	string cad2 {'4','1','3','5','1','9','2','3','4'};
 	string subcad (ejer10(cad1,cad2));
@@ -97,21 +91,33 @@ int main() {
 	/* Ejer 12
 	string cadena {'h','o','l','a','#','c','o','m','o','#','e','s','t','a','s'};
 	int tam = InvertirFrase(cadena,'#').size();
-	string fraseInvertida {InvertirFrase(cadena,'#')};
-	cout << fraseInvertida;
+	vector <string> fraseInvertida (InvertirFrase(cadena,'#'));
+	for (int i = 0; i < tam; i++) {
+		cout << fraseInvertida[i];
+	}
 	*/
 
-
-	string cadena {'h','o','l','a','#','#','n','#','e','#','#'};
+	/* Ejer 13
+	string cadena {'h','#','o','l','a','#','#','#','n','e'};
 	vector<string> cadenaSinEspacios (split(cadena));
 
 	for (int i = 0; i < cadenaSinEspacios.size(); i++) {
 		cout << cadenaSinEspacios[i] << endl;
 	}
 	cout << cadenaSinEspacios.size();
+	*/
 
+	/* Ejer 14
+	string cadena {'e','s','t','a','#','e','s','#','u','n','a','#','c','a','d','e','n','a','#','d','e','#','c','a','r','a','c','t','e','r','e','s','#','a','#','p','a','r','t','i','r'};
+	vector<string> cadenaSinEspacios (ejer14(cadena, 10));
+	for (int i = 0; i < cadenaSinEspacios.size(); i++) {
+		cout << cadenaSinEspacios[i] << endl;
+	}
+	*/
+	
 
 
 	return 0;
 }
+
 
